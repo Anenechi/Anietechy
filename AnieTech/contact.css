@@ -1,0 +1,991 @@
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+   }
+   
+   
+   body{
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       margin: 0;
+   }
+   
+   
+   .header, .background{
+      /* unsplash:Lks7vei-eAg */
+      background-image: url('image/backg.jpg');
+   position: absolute;
+   width: 1350px;
+   height: 811px;
+   top: 0px;
+   text-align: center;
+   display: flex;
+   }
+   
+   .header .background{
+       filter: blur(1.25px);
+   }
+   
+   
+   #nav{
+       background-color: transparent;
+       transition: background-color 0.5s ease;
+       height: 80px;
+       width: 100%;
+   
+   }
+   
+   
+   #nav.scrolled{
+       background-color: #2D2C2C;
+   }
+   
+   
+   nav{
+       display: flex;
+       align-items: center;
+       justify-content: baseline;
+       position: fixed;
+       z-index: 5;
+   }
+   
+   nav .log{
+       /* AnieTech */
+   
+   position: absolute;
+   width: 93px;
+   height: 22px;
+   left: 92px;
+   top: 25px;
+   font-family: 'Verdana';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 22px;
+   color: #000000;
+   background-color: white;
+   padding: 5px;
+   }
+   
+   nav .log .Tech{
+       color: #AC1E1E;
+   }
+   
+   nav ul{
+       position: absolute;
+   width: 598px;
+   height: 48px;
+   left: 650px;
+   top: 31px;
+   display: flex;
+   justify-content: space-between;
+   list-style: none;
+   }
+   
+   nav ul li a{
+   text-decoration: none;
+   /* Services */
+   
+   position: absolute;
+   height: 18px;
+   font-family: 'Verdana';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 18px;
+   color: #FFFFFF;
+   }
+   
+   nav ul li a:hover{
+       color: #AC1E1E;
+   }
+   
+   nav ul img[src="image/mark.png"]{
+       display: none;
+   }
+   
+   nav img[src="image/ham.png"]{
+       display: none;
+   }
+   
+   nav ul .btn{  
+   width: 100px;
+   height: 40px;
+   position: relative;
+   top: -10px;
+   font-size: 13px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   background-color: lightgray;
+   color: grey;
+   border: none;
+   border-radius: 8px;
+   font-weight: bold;
+   cursor: pointer;
+   }
+
+   @keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.4;
+    }
+
+        to{
+            opacity: 1;
+            scale: 1;
+        
+    }
+}
+
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-300px);
+    }
+
+        to{
+            transform: translateX(0);
+        
+    }
+}
+
+@keyframes slideInRight{
+    from{
+        transform: translateX(300px);
+    }
+
+        to{
+            transform: translateX(0);
+        
+    }
+}
+
+h3{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.whatsapp-btn, .whatsapp-img{
+    animation: slideInRight 0.2s ease-in;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+}
+
+.email-img, .email-btn{
+    animation: slideInLeft 0.2s ease-in;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+}
+
+h2{
+    animation: slideInRight 1s linear;
+    
+
+}
+     
+   
+   .header h2{
+
+   /* About Us */
+
+position: absolute;
+width: 350px;
+height: 67px;
+left: calc(50% - 280px/2);
+top: 375px;
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 700;
+font-size: 55px;
+line-height: 67px;
+/* identical to box height */
+color: #FFFFFf;
+   
+   }
+
+   section  h3{
+    /* Get in touch with us via! */
+display: flex;
+position: relative;
+width: 549px;
+height: 49px;
+left: 430px;
+top: 913px;
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 49px;
+color: #000000;
+align-items: center;
+justify-content: center;
+
+
+   }
+
+  
+
+   section .email img{
+
+/* gmail log */
+
+position: absolute;
+width: 60px;
+height: 50px;
+left: 380px;
+top: 1121px;
+
+   }
+
+   section .email button{
+    /* learn about us btn */
+
+position: absolute;
+width: 693.41px;
+height: 84px;
+left: 350px;
+top: 1104px;
+background-color: transparent;
+color: #2D2B2B;
+font-size: 30px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+border-radius: 8px;
+cursor: pointer;
+   }
+
+   section .email button:hover{
+    background-color: #2D2B2B;
+    color: white;
+   }
+
+   section .whatsapp img{
+    /* whatsapp icon */
+
+position: absolute;
+width: 60px;
+height: 59.93px;
+left: 380px;
+top: 1279px;
+   }
+
+   section .whatsapp button{
+    /* learn about us btn */
+position: absolute;
+width: 693.41px;
+height: 84px;
+left: 350px;
+top: 1267px;
+background-color: transparent;
+color: #2D2B2B;
+font-size: 30px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+border-radius: 8px;
+cursor: pointer;
+
+   }
+
+   section .whatsapp button:hover{
+    background-color: #2D2B2B;
+    color: white;
+   }
+
+   /*footer*/
+
+footer{
+    /* footer */
+position: absolute;
+width: 1350px;
+height: 332px;
+left: -1px;
+top: 1500px;
+background-color: #554D4D;
+}
+
+footer .log{
+/* AnieTech */
+position: absolute;
+width: 129px;
+height: 30px;
+left: 82px;
+top:30px;
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+color: #000000;
+background-color: white;
+padding: 10px;
+}
+
+footer .log .tech{
+    color: #AC1E1E;
+}
+
+footer address{
+    /* footer address */
+position: absolute;
+width: 332px;
+height: 108px;
+left: 82px;
+top: 120px;
+display: grid;
+gap: 30px;
+justify-content: space-between;
+color: white;
+}
+
+footer .social{
+    /* footer social */
+position: absolute;
+width: 234px;
+height: 38.48px;
+left: 82px;
+top: 260px;
+display: flex;
+justify-content: space-between;
+gap: 20px;
+}
+
+footer ul{
+    /* footer menu */
+position: absolute;
+width: 129px;
+height: 121px;
+left: 517px;
+top: 120px;
+list-style: none;
+display: grid;
+gap: 30px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+footer p.right{
+/* All Right Reserved. Anietech, 2024 */
+
+    position: absolute;
+    width: 450px;
+    height: 24px;
+    left: calc(50% - 350px/2);
+    top: 300px;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+
+}
+
+
+@media only screen and (max-width: 430px){
+
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;  
+}
+
+.header, .background{
+    /* unsplash:Lks7vei-eAg */
+    background-image: url('image/backg.jpg');
+ position: absolute;
+ width: 100%;
+ height: 463px;
+ top: 0px;
+ text-align: center;
+ display: flex;
+ }
+ 
+ .header .background{
+     filter: blur(1.25px);
+ }
+
+ nav{
+   
+    width: ;
+ }
+
+ nav ul{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start;
+    position: fixed;
+    height: 200vh;
+    width: 300px;
+    background-color: #2D2C2C;
+    top: 0px;
+    right: 0px;
+    left: 130px;
+    z-index: 5;
+    gap: 50px;
+
+ }
+
+
+
+ nav ul li a{
+    
+    top: 40px;
+    left: 100px;
+    position: relative;
+    justify-content: space-between;  
+ }
+
+
+
+ nav .btn{
+    position: absolute;
+    left: 90px;
+ margin-top: 50px;
+    
+ }
+
+ .header img[src="image/ham.png"]{
+    display: block;
+   position: absolute;
+   left: 370px;
+   height: 25px;
+
+ }
+
+ .header ul img[src="image/mark.png"]{
+    left: 20px;
+    display: block;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 20px;
+    
+ }
+
+ .header .log{
+    /* AnieTech */
+
+position: absolute;
+width: 93px;
+height: 22px;
+left: 20px;
+top: 25px;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+ }
+
+
+ .header h2{
+
+    /* About Us */
+ 
+ position: absolute;
+ width: 350px;
+ height: 67px;
+ left: calc(50% - 350px/2);
+ top: 185px;
+ font-family: 'Verdana';
+ font-style: normal;
+ font-weight: 700;
+ font-size: 40px;
+ line-height: 67px;
+ /* identical to box height */
+ color: #FFFFFf;
+    
+    }
+ 
+    section  h3{
+     /* Get in touch with us via! */
+ 
+ position: absolute;
+ width: 350px;
+ height: 49px;
+ left: 35px;
+ top: 500px;
+ font-family: 'Verdana';
+ font-style: normal;
+ font-weight: 700;
+ font-size: 25px;
+ line-height: 49px;
+ color: #000000;
+
+    }
+ 
+   
+ 
+    section .email img{
+ 
+ /* gmail log */
+ 
+ position: absolute;
+ width: 30px;
+ height: 20px;
+ left: 60px;
+ top: 655px;
+ 
+    }
+ 
+    section .email button{
+     /* learn about us btn */
+ 
+ position: absolute;
+ width: 350px;
+ height: 50px;
+ left: 40px;
+ top: 640px;
+ background-color: transparent;
+ color: #2D2B2B;
+ font-size: 17px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-weight: bold;
+ border-radius: 8px;
+ cursor: pointer;
+ 
+    }
+ 
+    
+ 
+    section .whatsapp img{
+     /* whatsapp icon */
+ 
+ position: absolute;
+ width: 30px;
+ height: 30px;
+ left: 60px;
+ top: 740px;
+    }
+ 
+    section .whatsapp button{
+     /* learn about us btn */
+ position: absolute;
+ width:350px;
+ height: 50px;
+ left: 40px;
+ top: 730px;
+ background-color: transparent;
+ color: #2D2B2B;
+ font-size: 16px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-weight: bold;
+ border-radius: 8px;
+ cursor: pointer;
+ 
+    }
+ 
+   
+
+
+footer{
+    /* footer section mobile */
+
+position: absolute;
+width: 100%;
+height: 431px;
+left: 0px;
+top: 900px;
+}
+
+footer .log{
+    /* AnieTech */
+
+position: absolute;
+width: 93px;
+height: 22px;
+left: 34px;
+top: 30px;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+}
+
+footer address{
+    /* footer address */
+
+position: absolute;
+width: 299px;
+height: 92px;
+left: 34px;
+top: 100px;
+font-size: 18px;
+gap: 10px;
+}
+
+footer ul{
+    /* footer about */
+position: absolute;
+width: 200px;
+height: 92px;
+left: 31px;
+top: 220px;
+gap: 10px;
+font-size: 18px;
+}
+
+footer .social{
+    /* footer about */
+
+position: absolute;
+width: 116px;
+height: 92px;
+left: 30px;
+top: 340px;
+}
+
+footer .social img{
+    width: 25px;
+    height: 25px;
+}
+
+footer p.right{
+    /* All Right Reserved. Anietech, 2024 */
+
+position: absolute;
+width: 350px;
+height: 22px;
+top: 400px;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+
+}
+
+}
+
+@media only screen and (max-width: 390px) {
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header{
+    width: 100%;
+}
+
+.header img[src="image/ham.png"]{
+    display: block;
+   position: absolute;
+   left: 310px;
+   height: 25px;
+
+ }
+
+ nav
+
+ section  h3{
+    /* Get in touch with us via! */
+
+position: absolute;
+left: 10px;
+font-weight: 700;
+font-size: 25px;
+line-height: 49px;
+color: #000000;
+
+   }
+
+  
+
+   section .email img{
+
+/* gmail log */
+
+position: absolute;
+width: 30px;
+height: 20px;
+left: 30px;
+top: 655px;
+
+   }
+
+   section .email button{
+    /* learn about us btn */
+
+position: absolute;
+width: 350px;
+height: 50px;
+left: 20px;
+top: 640px;
+background-color: transparent;
+color: #2D2B2B;
+font-size: 17px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+border-radius: 8px;
+cursor: pointer;
+
+   }
+
+   
+
+   section .whatsapp img{
+    /* whatsapp icon */
+
+position: absolute;
+width: 30px;
+height: 30px;
+left: 30px;
+top: 740px;
+   }
+
+   section .whatsapp button{
+    /* learn about us btn */
+position: absolute;
+width:350px;
+height: 50px;
+left: 20px;
+top: 730px;
+background-color: transparent;
+color: #2D2B2B;
+font-size: 16px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+border-radius: 8px;
+cursor: pointer;
+
+   }
+
+footer{
+    top: 900px;
+}
+
+}
+
+@media only screen and (max-width: 360px) {
+
+    body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    
+    }
+    
+    .header{
+        width: 100%;
+    }
+    
+    .header img[src="image/ham.png"]{
+        display: block;
+       position: absolute;
+       left: 310px;
+       height: 25px;
+     }
+
+     section  h3{
+        /* Get in touch with us via! */
+    
+    position: absolute;
+    width: 350px;
+    height: 49px;
+    left: 5px;
+    top: 500px;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 49px;
+    color: #000000;
+   
+       }
+    
+      
+    
+       section .email img{
+    
+    /* gmail log */
+    
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    left: 30px;
+    top: 655px;
+    
+       }
+    
+       section .email button{
+        /* learn about us btn */
+    
+    position: absolute;
+    width: 330px;
+    height: 50px;
+    left: 15px;
+    top: 640px;
+    background-color: transparent;
+    color: #2D2B2B;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    
+       }
+    
+       
+    
+       section .whatsapp img{
+        /* whatsapp icon */
+    
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 30px;
+    top: 740px;
+       }
+    
+       section .whatsapp button{
+        /* learn about us btn */
+    position: absolute;
+    width:330px;
+    height: 50px;
+    left: 15px;
+    top: 730px;
+    background-color: transparent;
+    color: #2D2B2B;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    
+       }
+    
+
+     
+
+     footer{
+        width: 100%;
+     }
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024Px){
+
+
+    body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .header{
+        width: 1024px;
+
+    }
+
+    nav{
+        width: 1024px;
+    }
+
+
+    .header .background{
+        /* unsplash:Lks7vei-eAg */
+        width: 1024px;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:flex-start;
+        position: fixed;
+        height: 200vh;
+        width: 600px;
+        background-color: #2D2C2C;
+        top: 0px;
+        right: 0px;
+        left: 420px;
+        z-index: 5;
+        gap: 80px;
+    
+     }
+    
+    
+    
+     nav ul li a{
+        
+        top: 40px;
+        left: 180px;
+        position: relative;
+        justify-content: space-between;  
+     }
+    
+    
+    
+     nav .btn{
+        position: absolute;
+        left: 170px;
+     margin-top: 50px;
+        
+     }
+    
+     .header img[src="image/ham.png"]{
+        display: block;
+       position: absolute;
+       left: 900px;
+       height: 50px;
+       width: 50px;
+    
+     }
+    
+     .header ul img[src="image/mark.png"]{
+        left: 20px;
+        display: flex;
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        top: 20px;  
+     }
+
+
+
+     section h3{
+        left: 40px;
+        width: 950px;
+     }
+     section .email img{
+        left: 200px;
+
+     }
+
+     section .email button{
+
+    left: 170px;
+        
+     }
+
+     section .whatsapp img{
+        left: 200px;
+
+     }
+
+     section .whatsapp button{
+
+    left: 170px;
+        
+     }
+
+     footer{
+        top: 1500px;
+        width: 1024px;
+     }
+
+
+
+
+}

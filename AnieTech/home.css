@@ -1,0 +1,1601 @@
+
+
+*,
+*::before,
+*::after{
+
+}
+
+*{
+ margin: 0;
+ padding: 0;
+}
+
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+
+.header, .background{
+   /* unsplash:Lks7vei-eAg */
+   background-image: url('image/backg.jpg');
+position: absolute;
+width: 1350px;
+height: 811px;
+top: 0px;
+text-align: center;
+display: flex;
+}
+
+.header .background{
+    filter: blur(1.25px);
+}
+
+
+#nav{
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+    height: 80px;
+    width: 100%;
+
+}
+
+
+#nav.scrolled{
+    background-color: #2D2C2C;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    position: fixed;
+    z-index: 5;
+}
+
+nav .log{
+    /* AnieTech */
+
+position: absolute;
+width: 93px;
+height: 22px;
+left: 92px;
+top: 25px;
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+color: #000000;
+background-color: white;
+padding: 5px;
+}
+
+nav .log .Tech{
+    color: #AC1E1E;
+}
+
+nav ul{
+    position: absolute;
+width: 598px;
+height: 48px;
+left: 650px;
+top: 31px;
+display: flex;
+justify-content: space-between;
+list-style: none;
+}
+
+nav ul li a{
+text-decoration: none;
+/* Services */
+
+position: absolute;
+height: 18px;
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 18px;
+color: #FFFFFF;
+}
+
+nav ul li a:hover{
+    color: #AC1E1E;
+}
+
+nav ul li  .home{
+    color: #AC1E1E;
+}
+
+nav ul img[src="image/mark.png"]{
+    display: none;
+}
+
+nav img[src="image/ham.png"]{
+    display: none;
+}
+
+nav ul .btn{  
+width: 100px;
+height: 40px;
+position: relative;
+top: -10px;
+font-size: 13px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+background-color: #AC1E1E;
+color: white;
+border: none;
+border-radius: 8px;
+font-weight: bold;
+cursor: pointer;
+}
+
+nav ul .btn:hover{
+    background-color: white;
+    color: #AC1E1E;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.4;
+    }
+
+        to{
+            opacity: 1;
+            scale: 1;
+        
+    }
+}
+
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-300px);
+    }
+
+        to{
+            transform: translateX(0);
+        
+    }
+}
+
+@keyframes slideInRight{
+    from{
+        transform: translateX(300px);
+    }
+
+        to{
+            transform: translateX(0);
+        
+    }
+}
+
+.header h2{
+    animation: slideInLeft 1s linear;
+    
+}
+
+.header p{
+    animation: slideInRight 1s linear;
+    
+}
+
+.hero-section, .hero-h, .hero-p, .hero-btn, h3, .about-section, .graphic-design, .graphic-p, .graphic-img{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+
+.ui-design, .ui-p, .ui-img, .web-design, .web-p, .web-img, .service-btn{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+  
+
+.header h2{
+    /* Welcome!! */
+position: absolute;
+width: 327px;
+height: 67px;
+left: calc(50% - 327px/2 + 0.5px);
+top: 320px;
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 700;
+font-size: 55px;
+line-height: 67px;
+color: #FFFFFF;
+align-items: center;
+justify-content: center;
+
+}
+
+
+.element{
+    opacity: 0;
+transition: opacity 1s;
+}
+
+.element.scroll-reveal {
+    animation: fade-in 1s;
+  }
+  
+
+
+.header p{
+    /* Explore our world of creativity and innovation. Elevate your brand with AnieTech. */
+
+    position: absolute;
+    width: 720px;
+    height: 72px;
+    left: calc(50% - 720px/2);
+    top: 405px;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+ .header .anie{
+    font-weight: 900px;
+}
+
+/* hero section*/
+
+.hero-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    width: 1276px;
+    height: 511px;
+    left: 82px;
+    top: 1043px;
+}
+
+.hero-section h1{
+    /* Transforming Ideas into Digital Experiences */
+
+    position: absolute;
+    width: 638px;
+    height: 237px;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 79px;
+    color: #2D2C2C;
+}
+
+.hero-section h1 .dig{
+    font-style: italic;
+    color: #AC1E1E;
+}
+
+.hero-section p{
+
+    /* With Expert Graphic Designer, UI/UX Designer and Web Development Service. */
+
+    position: absolute;
+    width: 544px;
+    height: 108px;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+    color: #554D4D;
+    top: 250px;
+}
+
+.hero-section .btn{
+    position: absolute;
+    width: 313px;
+    height: 72px;
+    top: 420px;
+    border: none;
+    background-color: #AC1E1E;
+    color: white;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.hero-section .btn:hover{
+    background-color: #2D2B2B;
+    
+
+}
+
+.hero-section img{
+    /* african-american-man-cafe 1 */
+position: absolute;
+width: 500px;
+height: 300.94px;
+left: 690px;
+top: 80px;
+background: url(african-american-man-cafe);
+border-radius: 5px;
+}
+
+.our-service{
+    /* 0ur service section */
+    display: grid;
+    grid-template-columns: 1fr;
+    position: absolute;
+    width: 1049px;
+    height: 1883px;
+    left: 209px;
+    top: 1796px;
+}
+
+.our-service h3{
+    /* Our Services */
+    position: absolute;
+    width: 356px;
+    height: 61px;
+    left: calc(50% - 356px/2 + 17px);
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+    color: #2D2B2B;
+}
+
+.our-service .service1 h4{
+    position: absolute;
+    width: 298px;
+    height: 43px;
+    top: 200px;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 43px;
+    color: #2D2B2B;
+}
+
+.our-service .service1 p{
+    /* Elevate your brand with our creative and effective Graphic Design solution. */
+    position: absolute;
+    width: 389px;
+    height: 147px;
+    top: 300px;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: justify;
+    color: #2D2B2B;
+}
+
+ .our-service .service1 p.gragh{
+    color: #AC1E1E;
+}
+
+.our-service .service1 img{
+    /* 1000_F_115223809_xF7NpZlNKSwJWmv5D5JJPorLpuTYXIPK 1 */
+
+    position: absolute;
+    width: 450px;
+    height: 280px;
+    top:200px;
+    left: 500px;
+    background: url(1000_F_115223809_xF7NpZlNKSwJWmv5D5JJPorLpuTYXIPK);
+}
+
+
+.our-service .service2 h4{
+    /* UI/UX Design */
+
+    position: absolute;
+    width: 274px;
+    height: 43px;
+    left: 670px;
+    top: 750px;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 43px;
+    text-align: right;
+    color: #AC1E1E;
+}
+
+.our-service .service2 p{
+  /* We craft user-centered solutions that simplify complexity and delight users. */
+
+position: absolute;
+width: 413px;
+height: 144px;
+left: 540px;
+top: 850px;
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 50px;
+text-align: justify;
+color: #474545;
+}
+
+.our-service .service2 img{
+ /* 240_F_772978596_anbgmGxVwZvOhjEd9kcXf4ZzENtGhXiJ 1 */
+
+    position: absolute;
+    width: 450px;
+    height: 280px;
+    left: px;
+    top: 750px;
+    background: url(240_F_772978596_anbgmGxVwZvOhjEd9kcXf4ZzENtGhXiJ.jpg);
+}
+
+
+.our-service .service3 H4{
+    /* Web Development */
+
+position: absolute;
+width: 360px;
+height: 43px;
+left:px;
+top: 1300px;
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 43px;
+color: #2D2B2B;
+}
+
+.our-service .service3 p{
+    /* Bring your digital vision to life with our expertise in wed development. */
+position: absolute;
+width: 400px;
+height: 108px;
+left: px;
+top: 1380px;
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 50px;
+text-align: justify;
+color: #2D2B2B;
+}
+
+.our-service .service3 img{
+    /* 240_F_709813530_F5butcSxeS1VzR3MG3UjCUsQ48V3YFFO 1 */
+
+position: absolute;
+width: 450px;
+height: 280px;
+left: 500px;
+top: 1280px;
+background: url(240_F_709813530_F5butcSxeS1VzR3MG3UjCUsQ48V3YFFO.jpg);
+}
+
+.our-service .service-btn{
+    /* learn about us btn */
+
+position: absolute;
+width: 544px;
+height: 84px;
+left: calc(50% - 544px/2 - 1px);
+top: 1800px;
+border: none;
+background-color: #AC1E1E;
+color: white;
+font-size: 30px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+cursor: pointer;
+border-radius: 8px;
+font-weight: bold;
+}
+
+.service-btn:hover{
+    background-color:#2D2B2B;
+   
+}
+
+/* about us*/
+
+
+.about-section{
+    /* about section */
+position: absolute;
+width: 1350px;
+height: 619px;
+left: 0px;
+top: 3834px;
+background-color: #191919;
+}
+
+.about-section h3{
+    /* About Us */
+
+position: absolute;
+width: 260px;
+height: 49px;
+left: calc(50% - 229px/2 - 1.5px);
+top: 70px;
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 49px;
+text-align: center;
+letter-spacing: 0.09em;
+color: #FFFEFE;
+}
+
+.about-section p{
+position: absolute;
+width: 862px;
+height: 147px;
+left: calc(50% - 862px/2 - 1px);
+top: 200px;
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 49px;
+text-align: center;
+letter-spacing: 0.01em;
+color: #E4DBDB;
+}
+
+
+.about-section .about-btn{
+    /* learn about us btn */
+position: absolute;
+width: 544px;
+height: 90px;
+left: calc(50% - 544px/2 - 1px);
+top: 450px;
+border: none;
+border-radius: 8px;
+background-color: #AC1E1E;
+color: white;
+font-size: 30px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+cursor: pointer;
+}
+
+.about-btn:hover{
+    background-color: white;
+    color: #AC1E1E;
+}
+
+/*footer*/
+
+footer{
+    /* footer */
+    display: flex;
+position: absolute;
+width: 1350px;
+height: 332px;
+left: -1px;
+top: 4567px;
+background-color: #554D4D;
+
+}
+
+footer .log{
+/* AnieTech */
+position: absolute;
+width: 129px;
+height: 30px;
+left: 82px;
+top:30px;
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+color: #000000;
+background-color: white;
+padding: 10px;
+}
+
+footer .log .tech{
+    color: #AC1E1E;
+}
+
+footer address{
+    /* footer address */
+position: absolute;
+width: 332px;
+height: 108px;
+left: 82px;
+top: 120px;
+display: grid;
+gap: 30px;
+justify-content: space-between;
+color: white;
+}
+
+footer .social{
+    /* footer social */
+position: absolute;
+width: 234px;
+height: 38.48px;
+left: 82px;
+top: 260px;
+display: flex;
+justify-content: space-between;
+gap: 20px;
+}
+
+footer ul{
+    /* footer menu */
+position: absolute;
+width: 129px;
+height: 121px;
+left: 517px;
+top: 120px;
+list-style: none;
+display: grid;
+gap: 30px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+footer p.right{
+/* All Right Reserved. Anietech, 2024 */
+
+    position: absolute;
+    width: 450px;
+    height: 24px;
+    left: calc(50% - 350px/2);
+    top: 300px;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+
+}
+
+@media only screen and (max-width: 430px){
+
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;  
+}
+
+.header, .background{
+    /* unsplash:Lks7vei-eAg */
+    background-image: url('image/backg.jpg');
+ position: absolute;
+ width: 100%;
+ height: 463px;
+ top: 0px;
+ text-align: center;
+ display: flex;
+ }
+ 
+ .header .background{
+     filter: blur(1.25px);
+ }
+
+ nav{
+   
+    width: ;
+ }
+
+ nav ul{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start;
+    position: fixed;
+    height: 200vh;
+    width: 300px;
+    background-color: #2D2C2C;
+    top: 0px;
+    right: 0px;
+    left: 80px;
+    z-index: 5;
+    gap: 50px;
+
+ }
+
+
+
+ nav ul li a{
+    
+    top: 40px;
+    left: 100px;
+    position: relative;
+    justify-content: space-between;  
+ }
+
+
+
+ nav .btn{
+    position: absolute;
+    left: 90px;
+ margin-top: 50px;
+    
+ }
+
+ .header img[src="image/ham.png"]{
+    display: block;
+   position: absolute;
+   left: 370px;
+   height: 25px;
+
+ }
+
+ .header ul img[src="image/mark.png"]{
+    left: 20px;
+    display: block;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 20px;
+    
+ }
+
+ .header .log{
+    /* AnieTech */
+
+position: absolute;
+width: 93px;
+height: 22px;
+left: 20px;
+top: 25px;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+
+
+ }
+
+ .header h2{
+    /* Welcome!! */
+position: absolute;
+width: 238px;
+height: 49px;
+left: calc(50% - 238px/2 + 0.5px);
+top: 152px;
+font-weight: 700;
+font-size: 40px;
+line-height: 49px;
+ }
+
+ .header p{
+    /* Explore our world of creativity and innovation. Elevate your brand with AnieTech. */
+
+position: absolute;
+width: 311px;
+height: 72px;
+left: calc(50% - 311px/2);
+top: 208px;
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+color: #FFFFFF;
+ }
+
+ 
+
+
+
+
+.hero-section{
+/* hero setion mobile */
+
+position: absolute;
+width:100%;
+height: 600.88px;
+left: 0px;
+top: 552px;
+}
+
+.hero-section img{
+  
+position: absolute;
+width: 90%;
+height: 262px;
+top: 0px;
+left: 20px;
+}
+
+.hero-section h1{
+    /* Transforming Ideas into Digital Experiences */
+
+position: absolute;
+width: 301px;
+height: 118px;
+top: 300px;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+left: 40px;
+align-content: center;
+}
+
+.hero-section p{
+    /* With Expert Graphic Designer, UI/UX Designer and Web Development Service. */
+
+position: absolute;
+width: 338px;
+height: 66px;
+left: calc(50% - 338px/2 + 0.5px);
+top: 450px;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+letter-spacing: 0.1em;
+}
+
+.hero-section .btn{
+    /* contact us hero */
+/* contact us hero */
+
+position: absolute;
+width: 269px;
+height: 61.88px;
+left: calc(50% - 269px/2);
+top: 550px;
+}
+
+.our-service{
+/* our service mobile */
+display: block;
+    position: absolute;
+    width: 100%;
+    height: 1667.95px;
+    left: 0px;
+    top: 1213px;
+}
+
+.our-service h3{
+    /* Our Services */
+
+position: absolute;
+width: 214px;
+height: 36px;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+left: 100px ;
+top: 20px;
+}
+
+
+.our-service .service1 img{
+/* 1000_F_115223809_xF7NpZlNKSwJWmv5D5JJPorLpuTYXIPK 3 */
+
+    position: absolute;
+    width: 90%;
+    height: 223px;
+    left: 20px;
+    top: 100px;
+
+}
+
+.our-service .service1 h4{
+    /* Graphic Design */
+
+position: absolute;
+width: 256px;
+height: 36px;
+left: 70px;
+top: 350px;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+}
+
+.our-service .service1 p{
+    /* Elevate your brand with our creative and effective Graphic Design solution. */
+
+position: absolute;
+width: 355px;
+height: 66px;
+left: calc(50% - 355px/2);
+top: 420px;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+letter-spacing: 0.09em;
+}
+
+.our-service .service2 img{
+    /* 240_F_772978596_anbgmGxVwZvOhjEd9kcXf4ZzENtGhXiJ 3 */
+    position: absolute;
+    width: 90%;
+    height: 263px;
+    left: 20px;
+    top: 600px;
+ 
+}
+
+.our-service .service2 h4{
+
+    position: absolute;
+    width: 235px;
+    height: 36px;
+    left: 90px;
+    top: 900px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+
+.our-service .service2 p{
+    /* We craft user-centered solutions that simplify complexity and delight users. */
+
+position: absolute;
+width: 348px;
+height: 66px;
+left: calc(50% - 348px/2 + 0.5px);
+top: 960px;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+letter-spacing: 0.09em;
+}
+
+.our-service .service3 img{
+    /* 240_F_709813530_F5butcSxeS1VzR3MG3UjCUsQ48V3YFFO 3 */
+
+position: absolute;
+width: 90%;
+height: 262px;
+left: 20px;
+top: 1170px; 
+}
+
+.our-service .service3 h4{
+    /* Web Development */
+
+position: absolute;
+width: 308px;
+height: 36px;
+left: 60px;
+top:1480px;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+justify-content: center;
+}
+
+.our-service .service3 p{
+    /* Bring your digital vision to life with our expertise in wed development. */
+
+position: absolute;
+width: 320px;
+height: 66px;
+left: 50px;
+top: 1550px;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+letter-spacing: 0.09em;
+}
+
+.our-service .service-btn{
+    /* learn about us btn */
+position: absolute;
+width: 365px;
+height: 51.95px;
+left: calc(50% - 365px/2);
+top: 1650px;
+font-size: 20px;
+}
+
+/*about section moblie*/
+
+.about-section{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 335px;
+    left: 0px;
+    top: 2946px;
+}
+
+.about-section h3{
+    /* About Us */
+
+position: absolute;
+width: 250px;
+height: 36px;
+left: calc(50% - 172px/2 + 0.5px);
+top: 50px;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-align: justify;
+letter-spacing: 0.09em;
+}
+
+.about-section p{
+
+position: absolute;
+width: 370px;
+height: 96px;
+left: calc(50% - 370px/2 + 0.5px);
+top: 100px;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+letter-spacing: 0.01em;
+}
+
+.about-section .about-btn{
+    /* learn about us btn */
+position: absolute;
+width: 341px;
+height: 56.42px;
+left: calc(50% - 341px/2);
+top: 230px;
+font-size: 20px;
+}
+
+footer{
+    /* footer section mobile */
+
+position: absolute;
+width: 100%;
+height: 431px;
+left: 0px;
+top: 3328px;
+}
+
+footer .log{
+    /* AnieTech */
+
+position: absolute;
+width: 93px;
+height: 22px;
+left: 34px;
+top: 30px;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+}
+
+footer address{
+    /* footer address */
+
+position: absolute;
+width: 299px;
+height: 92px;
+left: 34px;
+top: 100px;
+font-size: 18px;
+gap: 10px;
+}
+
+footer ul{
+    /* footer about */
+position: absolute;
+width: 200px;
+height: 92px;
+left: 31px;
+top: 220px;
+gap: 10px;
+font-size: 18px;
+}
+
+footer ul li a:hover{
+    color: #AC1E1E;
+     
+ 
+ }
+
+footer .social{
+    /* footer about */
+
+position: absolute;
+width: 116px;
+height: 92px;
+left: 30px;
+top: 340px;
+}
+
+footer .social img{
+    width: 25px;
+    height: 25px;
+}
+
+footer p.right{
+    /* All Right Reserved. Anietech, 2024 */
+
+position: absolute;
+width: 350px;
+height: 22px;
+top: 400px;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+
+}
+
+}
+
+/* Andriod mobile version */
+
+@media only screen and (max-width: 390px){
+
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    .header{
+        width: 100%;
+    }
+
+    .header img[src="image/ham.png"]{
+        display: block;
+       position: absolute;
+       left: 310px;
+       height: 25px;
+    
+     }
+
+     .hero-section h1{
+        /* Transforming Ideas into Digital Experiences */
+    
+    position: absolute;
+    width: 300px;
+    height: 118px;
+    top: 300px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    left: 40px;
+    align-content: center;
+    }
+
+    .our-service .service1 h4{
+        left: 70px;
+    }
+
+    .our-service .service2 h4{
+        text-align: center;
+        justify-content: center;
+        left: 70px;
+    }
+
+    .our-service .service3 Img{
+        top: 1150px
+    }
+    .our-service .service3 h4{
+
+        left: 25px;
+        top: 1450px
+
+    }
+
+    .our-service .service3 p{
+        left: 20px;
+        top:1500px;
+
+    }
+
+    .our-service .service-btn{
+        width: 300px;
+        left: 40px;
+    }
+    
+    .about-section h3{
+        width: 150px;
+        position: absolute;
+        font-size: 20px;
+       text-align: center;
+       justify-content: center;
+       top: 30px;
+    }
+
+    .about-section p{
+        font-size: 15px;
+        width: 320px;
+        left: 25px;
+         
+    }
+
+}
+
+
+@media only screen and  ( max-width: 360px){
+
+.hero-section h1{
+    width: 300px;
+    left: 30px;
+}
+
+.our-service .service1 h4{
+   position: absolute;
+    text-align: center;
+   justify-items: center;
+   left: 50px;
+}
+
+.our-service .service-btn{
+    left:30px;
+}
+.about-section h3{
+    text-align: center;
+    justify-items: center;
+    left: 100px;
+}
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .header{
+        width: 1024px;
+
+    }
+
+    nav{
+        width: 1024px;
+    }
+
+
+    .header .background{
+        /* unsplash:Lks7vei-eAg */
+        width: 1024px;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:flex-start;
+        position: fixed;
+        height: 200vh;
+        width: 600px;
+        background-color: #2D2C2C;
+        top: 0px;
+        right: 0px;
+        left: 420px;
+        z-index: 5;
+        gap: 80px;
+    
+     }
+    
+    
+    
+     nav ul li a{
+        
+        top: 40px;
+        left: 180px;
+        position: relative;
+        justify-content: space-between;  
+     }
+    
+    
+    
+     nav .btn{
+        position: absolute;
+        left: 170px;
+     margin-top: 50px;
+        
+     }
+    
+     .header img[src="image/ham.png"]{
+        display: block;
+       position: absolute;
+       left: 900px;
+       height: 50px;
+       width: 50px;
+    
+     }
+    
+     .header ul img[src="image/mark.png"]{
+        left: 20px;
+        display: flex;
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        top: 20px;  
+     }
+
+     .header .h2{
+
+        /* Welcome!! */
+
+position: absolute;
+width: 327px;
+height: 67px;
+left: calc(50% - 327px/2 + 0.5px);
+top: 277px;
+font-weight: 700;
+font-size: 55px;
+line-height: 67px;
+
+     }
+
+     .hero-section{
+        display: flex;
+        width: 100%;
+     }
+
+     .hero-section img{
+        /* african-american-man-cafe 2 */
+
+        position: absolute;
+        width: 715px;
+        height: 476px;
+        left: 90px;
+        top: 30px;
+        align-items: center;
+        justify-content: center;
+
+
+     }
+
+     .hero-section h1{
+            /* Transforming Ideas into Digital Experiences */
+
+        position: absolute;
+        width: 492px;
+        height: 165px;
+        left: 200px;
+        top: 550px;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 61px;
+        text-align: center;
+
+     }
+
+     .hero-section p{
+        /* With Expert Graphic Designer, UI/UX Designer and Web Development Service. */
+
+        position: absolute;
+        width: 487px;
+        height: 90px;
+        left: 180px;
+        top: 750px;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.1em;
+     }
+
+     .hero-section .btn{
+        /* contact us hero */
+
+            position: absolute;
+            width: 313px;
+            height: 72px;
+            left: 270px;
+            top: 920px;
+     }
+
+     .our-service{
+        /* our service section tablet */
+
+    position: absolute;
+    width: 657px;
+    height: 2794px;
+    left: 184px;
+    top: 1963px;
+     }
+
+     .our-service h3{
+        /* Our Services */
+
+position: absolute;
+width: 356px;
+height: 61px;
+left: calc(50% - 356px/2);
+top: 200px;
+font-weight: 700;
+font-size: 50px;
+line-height: 61px;
+     }
+
+     .our-service .service1 img{
+    /* 1000_F_115223809_xF7NpZlNKSwJWmv5D5JJPorLpuTYXIPK 2 */
+    position: absolute;
+    width: 656px;
+    height: 372.02px;
+    left: calc(50% - 656px/2);
+    top: 350px;
+     }
+
+     .our-service .service1 h4{
+        /* Graphic Design */
+
+    position: absolute;
+    width: 341px;
+    height: 49px;
+    left: calc(50% - 341px/2 + 0.5px);
+    top: 750px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+     }
+
+     .our-service .service1 p{
+        /* Elevate your brand with our creative and effective Graphic Design solution. */
+
+        position: absolute;
+        width: 593px;
+        height: 108px;
+        left: calc(50% - 593px/2 + 0.5px);
+        top: 850px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: 0.09em;;
+     }
+
+     .our-service .service2 img{
+        /* 240_F_772978596_anbgmGxVwZvOhjEd9kcXf4ZzENtGhXiJ 2 */
+
+        position: absolute;
+        width: 656px;
+        height: 435.37px;
+        left: calc(50% - 656px/2 + 1px);
+        top: 1100px;
+     }
+
+     .our-service .service2 h4{
+        /* UI/UX Design */
+
+        position: absolute;
+        width: 313px;
+        height: 49px;
+        left: 180px;
+        top: 1600px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+        
+     }
+
+     .our-service .service2 p{
+        /* We craft user-centered solutions that simplify complexity and delight users. */
+
+        position: absolute;
+        width: 623px;
+        height: 108px;
+        left: 40px;
+        top: 1700px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: 0.09em;
+     }
+
+     .our-service .service3 img{
+
+        position: absolute;
+        width: 656px;
+        height: 437px;
+        left: calc(50% - 656px/2);
+        top: 2000px;
+     }
+
+     .our-service .service3 h4{
+        /* Web Development */
+
+        position: absolute;
+        width: 411px;
+        height: 49px;
+        left: calc(50% - 411px/2 + 0.5px);
+        top: 2500px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+    
+     }
+
+     .our-service .service3 p{
+        /* Bring your digital vision to life with our expertise in wed development. */
+
+        position: absolute;
+        width: 531px;
+        height: 108px;
+        left: calc(50% - 531px/2 + 0.5px);
+        top: 2600px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: 0.09em;
+     }
+
+     .our-service .service-btn{
+        /* learn about us btn */
+        position: absolute;
+        width: 544px;
+        height: 90px;
+        left: calc(50% - 544px/2);
+        top:2800px;
+     }
+     .about-section{
+        width: 1024px;
+        position: absolute;
+        height: 619px;
+        left: 0px;
+        top: 5000px;
+        background: #191919;
+     }
+
+     footer{
+        width: 1024px;
+        position: absolute;
+        height: 332px;
+        left: 0px;
+        top: 5700px;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
